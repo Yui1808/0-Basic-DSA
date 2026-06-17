@@ -1,25 +1,25 @@
-let str = "A man, a Plan, a Canal: Panama   ";
+let str = "A man, a Plan, a Canal: Panamk   ";
 let start = 0;
 let end = str.length-1;
 let flag = true;
 
 while(start<end){
 
-    while(str[start]==="," || str[start]===" " || str[start]===":"){
+    while(start<end && (str[start]==="," || str[start]===" " || str[start]===":") ){
         start++
     }
 
     
 
 
-    while(str[end ]==="," || str[end]===":" || str[end]===" " ){
+    while(end>start &&  (str[end ]==="," || str[end]===":" || str[end]===" ")){
 
     end--;
 
     }
 
 
-    if(str[start])
+    
 
     
     if(str[start].toUpperCase()!==str[end].toUpperCase()){
